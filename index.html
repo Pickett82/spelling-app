@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spelling</title>
+  <link rel="stylesheet" href="style.css">  
+  
+</head>
+<body>
+    <div id="setup">
+        <label for="suggestions">Generate a word list:</label>
+
+<select id="suggestions">
+  <option value="months">Months</option>
+  <option value="animals">Animals</option>
+  <option value="countries">Countries</option>
+  <option value="number">Numbers</option>
+</select>
+<br>
+        <textarea id="wordstextarea" rows="20" cols="25">
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+            </textarea>
+            <br>
+            <input type="radio" name="gametype" value="unlimited" id="unlimited" checked><label for="unlimited"  >Unlimited</label>
+            <input type="radio" name="gametype" value="timed" id="timed"><label for="timed">Timed</label>
+            <input type="radio" name="gametype" value="score" id="scorerb"><label for="scorerb">Score</label>
+            <input type="radio" name="gametype" value="elim" id="elim"><label for="elim">Elimination</label>
+            <br>
+            <button id="start">Start</button>
+    </div>
+    <div class="hidden" id="test">
+        <audio id="correctSound">
+            <source src="correct.wav" type="audio/wav">
+        </audio>
+        <audio id="wrongSound">
+            <source src="incorrect.mp3" type="audio/mpeg">
+        </audio>
+    
+        <button id="sayWord">Repeat word</button>
+        <br>
+        <input type="text" id="typingarea" class="correct">
+        <div class="scoreboard">
+            Score: <span id="score">0</span>
+        </div>
+        <button id="endgame">End game</button>
+    </div>
+    
+    <script src="spelling.js"></script>
+</body>

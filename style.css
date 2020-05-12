@@ -1,0 +1,23 @@
+#typingarea{
+width:100%;
+font-size: 10em;
+font-weight: bolder;
+background-color: black;
+}
+
+.correct {
+    color: #39ff14;
+}
+
+.wrong {
+    color: red;
+}
+
+body.test{
+    background-color: black;
+}
+.scoreboard {
+color: white;
+font-size: 5em;
+}
+.hidden {display: none;}
